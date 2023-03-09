@@ -11,9 +11,9 @@ To use the mod go into a [MODDED GAMEMODE](https://github.com/legoandmars/Utilla
 
 ## Notes
 
-*KronoSeptic I spelled 'Haunted' correctly this time >:)
-*This mod was written when I was tired so it is slightly disorganized.
-*If I find this mod in any 'shitty' mod menus I will take action through Discord to have it removed.
+* KronoSeptic I spelled 'Haunted' correctly this time >:)
+* This mod was written when I was tired so it is slightly disorganized.
+* If I find this mod in any 'shitty' mod menus I will take action through Discord to have it removed.
 
 #### Required Notice
 This product is not affiliated with Gorilla Tag or Another Axiom LLC and is not endorsed or otherwise sponsored by Another Axiom LLC. Portions of the materials contained herein are property of Another Axiom LLC. :copyright: 2021 Another Axiom LLC.
