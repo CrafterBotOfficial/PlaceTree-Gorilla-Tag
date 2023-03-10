@@ -13,7 +13,7 @@ To use the mod go into a [MODDED GAMEMODE](https://github.com/legoandmars/Utilla
 
 ### Usage
 
-![] (https://github.com/CrafterBotOfficial/PlaceTree-Gorilla-Tag/blob/main/Github/UsageClip.mkv)
+![] (/Github/UsageClip.mkv)
 
 ## Notes
 
