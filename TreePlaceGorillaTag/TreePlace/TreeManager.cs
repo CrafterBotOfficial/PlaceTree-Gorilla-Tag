@@ -14,16 +14,10 @@ namespace TreePlaceGorillaTag.TreePlace
             TreeParent = GameObject.Find("Level/forest/ForestObjects/SmallTrees/");
             TreePrefab = Instantiate<GameObject>(TreeParent.transform.GetChild(0).gameObject);
 
-            // For the record I tried to use Find() but the stupid fucking this refused to work so fuck off pls:)
-
-            GameObject SpringToFall = TreePrefab.transform.GetChild(0).gameObject;
-            GameObject SmallTree = SpringToFall.transform.GetChild(0).gameObject;
-
-            Destroy(SmallTree.GetComponent<MeshCollider>());
-
-            SpringToFall.SetActive(true);
-            TreePrefab.SetActive(false);
-            TreePrefab.transform.GetChild(1).gameObject.SetActive(false);
+            Transform TreePrefabTransform = TreePrefab.transform;
+            Destroy(TreePrefabTransform.GetChild(0).GetComponentInChildren<MeshCollider>());
+            Destroy(TreePrefabTransform.GetChild(1).GetChild(0).GetComponent<MeshCollider>());
+            TreePrefabTransform.GetChild(1).gameObject.SetActive(true);
         }
 
         // Mod Allowed
@@ -49,7 +43,7 @@ namespace TreePlaceGorillaTag.TreePlace
 
             GameObject Tree = Instantiate(TreePrefab, Position, quaternion);
             Tree.transform.localScale = Scale;
-            Tree.transform.GetChild(1).gameObject.SetActive(true);
+            Tree.transform.GetChild(1).GetChild(0).gameObject.AddComponent<MeshCollider>();
 
             PlacedTrees.Add(Tree);
         }

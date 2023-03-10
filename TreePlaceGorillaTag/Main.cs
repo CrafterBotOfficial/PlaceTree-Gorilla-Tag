@@ -55,7 +55,7 @@ namespace TreePlaceGorillaTag
     {
         public const string ModGUILD = "crafterbot.placetree.gorillatag";
         public const string ModName = "Place Tree";
-        public const string ModVersion = "1.0.0";
+        public const string ModVersion = "1.0.1";
     }
 }
 
