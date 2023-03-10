@@ -352,5 +352,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TreePlace\TreeManager.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Networking\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

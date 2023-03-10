@@ -1,9 +1,5 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
-using UnityEngine.Experimental.GlobalIllumination;
-using UnityEngine.Rendering;
-using HarmonyLib;
 
 namespace TreePlaceGorillaTag.TreePlace
 {
@@ -19,7 +15,7 @@ namespace TreePlaceGorillaTag.TreePlace
             TreePrefab = Instantiate<GameObject>(TreeParent.transform.GetChild(0).gameObject);
 
             // For the record I tried to use Find() but the stupid fucking this refused to work so fuck off pls:)
-             
+
             GameObject SpringToFall = TreePrefab.transform.GetChild(0).gameObject;
             GameObject SmallTree = SpringToFall.transform.GetChild(0).gameObject;
 
@@ -60,6 +56,7 @@ namespace TreePlaceGorillaTag.TreePlace
 
         public static void ClearAllTree()
         {
+            TreePrefab.SetActive(false);
             foreach (GameObject Tree in PlacedTrees) Destroy(Tree);
         }
     }
